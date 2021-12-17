@@ -1,0 +1,172 @@
+        .pointer {
+            width: 35px;
+            position: absolute;
+            margin-left: -59px;
+            margin-top: 39px;
+        }
+
+        .intro {
+            margin: 10px 10px 10px 0px;
+            padding: 0px;
+            font-size: 15px;
+            color: rgba(128, 128, 128, 0.753);
+        }
+
+        #myForm div p {
+            color: rgb(158, 159, 160);
+            font-size: 13px;
+        }
+
+        form h2 {
+            color: rgba(255, 255, 255, 0.884);
+            margin: 10px 10px 5px 0px;
+            padding: 5px 5px 5px 0px;
+        }
+
+        form div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 0px;
+            margin-bottom: 35px;
+        }
+
+        input[type=text],
+        input[type=tel],
+        input[type=number] {
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.884);
+            outline: none;
+            background: transparent;
+            padding: 15px 0 10px 0px;
+            font-family: inherit;
+            color: rgba(255, 255, 255, 0.884);
+        }
+
+        label {
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.884);
+            position: relative;
+            margin: 7px 7px 7px 15px;
+            padding: 5px;
+        }
+
+        label input[type=radio] {
+            height: 0;
+        }
+
+        label span {
+            position: absolute;
+            top: 6px;
+            left: -15px;
+            width: 15px;
+            height: 15px;
+            background-color: rgba(128, 128, 128, 0.753);
+            border-radius: 50%;
+        }
+
+        label span:after {
+            content: "";
+            position: absolute;
+            display: none;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgb(240, 246, 247);
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+        }
+
+        label input:checked~span:after {
+            display: block;
+        }
+
+        .span1,
+        .span2,
+        .span3,
+        .span4,
+        .span5,
+        .span6,
+        .span7,
+        .span8,
+        .span9,
+        .span10 {
+            margin: 1px;
+            padding: 1px;
+            color: rgba(151, 43, 24, 0.7);
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        button[type=submit] {
+            padding: 15px;
+            border-radius: 10px;
+            background-color: rgba(32, 32, 32, 0.897);
+            color: rgb(240, 246, 247);
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        button[type=submit]:active,
+        button[type=submit]:hover {
+            opacity: 0.9;
+        }
+
+        #address,
+        #name {
+            padding: 15px 60px 10px 0px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            margin-top: 17px;
+            margin-bottom: 10px;
+        }
+
+        .costs {
+            padding: 1px 15px 15px 15px;
+            margin-bottom: 30px;
+            background-color: rgba(32, 32, 32, 0.514);
+        }
+
+        .costs h3 {
+            color: rgb(240, 246, 247);
+            margin: 18px 10px 10px 0px;
+            padding: 5px 5px 5px 0px;
+            font-size: 23px;
+        }
+
+        .costs ul li {
+            color: rgb(158, 159, 160);
+            padding: 5px 5px 5px 0px;
+            list-style-position: inside;
+            font-size: 15px;
+        }
+
+        .costs span {
+            color: rgba(151, 43, 24, 0.7);
+        }
+
+        .photos li {
+            list-style-type: none;
+        }
+
+        .photos img {
+            width: 395px;
+        }
+
+        .sum {
+            text-decoration: underline;
+            text-decoration-color: rgba(151, 43, 24, 0.7);
+            text-decoration-thickness: 10px;
+            margin-bottom: 10px;
+        }
+
+        .photos img:hover,
+        .photos img:focus {
+            box-shadow: 0 0 10px #000;
+        }

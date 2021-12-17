@@ -1,0 +1,90 @@
+	    .pointer {
+            width: 35px;
+            position: absolute;
+            margin-left: -53px;
+            margin-top: 39px;
+        }
+
+        .intro {
+            margin: 25px 0px 25px 0px;
+            color: rgba(255, 255, 255, 0.884);
+            font-size: 23px;
+            line-height: 32px;
+            font-weight: initial;
+        }
+
+        #slider span {
+            color: rgba(32, 32, 32, 0.897);
+            background-color: rgba(255, 255, 255, 0.884);
+            margin: 20px 20px 20px 25px;
+            padding: 20px 25px;
+            position: absolute;
+            font-size: 30px;
+            font-weight: 900;
+            opacity: 0;
+        }
+
+        .content1 {
+            animation-name: locationAnimation;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes locationAnimation {
+            10% {
+                margin: 20px 20px 20px 25px;
+                opacity: 0;
+            }
+
+            14% {
+                margin: 20px 20px 20px -30px;
+                opacity: 10;
+            }
+
+            86% {
+                margin: 20px 20px 20px -30px;
+                opacity: 10;
+            }
+
+            90% {
+                margin: 20px 20px 20px 25px;
+                opacity: 0;
+            }
+        }
+
+        #slider {
+            position: relative;
+        }
+
+        #slider img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .line {
+            position: absolute;
+            margin: -20px 0px 0px 350px;
+            width: 67%;
+            color: rgba(128, 128, 128, 0.753);
+        }
+
+        .work {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            margin-top: 15px;
+        }
+
+        .work img {
+            margin-top: 15px;
+        }
+
+        .work img:hover,
+        .work img:focus {
+            box-shadow: 0 0 10px #000;
+        }
+
+        .work li {
+            list-style-type: none;
+        }

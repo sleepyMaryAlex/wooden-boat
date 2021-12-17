@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Заказать лодку</title>
+    <link rel="icon" href="icon (2).jpg">
+    <link rel="stylesheet" type="text/css" href="base.css">
+    <link rel="stylesheet" type="text/css" href="columns.css">
+    <link rel="stylesheet" type="text/css" href="order_styles.css">
+    <link rel="stylesheet" type="text/css" media="(max-device-width: 1024px)" href="mobile_order.css"/>
+</head>
+
+<body>
+
+    <div id="header">
+
+        <div class="holder">
+
+            <div id="title"><span><a href="index.html" title="Wooden_boat" rel="ГЛАВНАЯ">WOODEN BOAT</a></span></div>
+            <nav>
+                <ul id="siteNav">
+                    <li class="selected"><a href="index.html">ГЛАВНАЯ</a></li>
+                    <li><a href="order.html">ЗАКАЗАТЬ</a><img src="sitenav_selected_dark.png" alt="" class="pointer" /></li>
+                    <li><a href="delivery.html">О ДОСТАВКЕ</a></li>
+                    <li><a href="care.html">УХОД ЗА ЛОДКОЙ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div id="main">
+
+        <h2 class="headlines"><span>Заказать лодку</span></h2>
+
+        <h3 class="intro">Срок изготовления зависит от сезона и варьируется от 3-х дней до нескольких месяцев.</h3>
+
+        <div class="container">
+
+            <form id="myForm" method="post" action="">
+                <div>
+                    <h2>Ваше имя*</h2>
+                    <input type="text" name="name" placeholder="Укажите имя" id="name" autocomplete="off" />
+                    <div class="span1"></div>
+                </div>
+                <div>
+                    <h2>Ваш телефон*<br /><span style="font-size: 15px;">(9 цифр)</span></h2>
+                    <input type="tel" name="phone" id="tel" autocomplete="off" placeholder="Введите номер" />
+                    <div class="span2"></div>
+                </div>
+                <div>
+                    <h2>Размер лодки*<br /><span style="font-size: 15px;">(3.7м - 4.6м)</span></h2>
+                    <input type="number" min="3.70" max="4.60" step="0.1" id="boatSize" />
+                    <div class="span3"></div>
+                </div>
+                <div>
+                    <h2>Количество комплектов весел*</h2>
+                    <input type="number" min="1" max="10" step="1" id="numberOfSetsOfOars" />
+                    <div class="span10"></div>
+                </div>
+                <div>
+                    <h2>Обработка антисептическим составом*</h2>
+                    <label>Да
+                        <input type="radio" value="с покрытием антисептиком" name="antiseptic" id="antisepticYes" />
+                        <span></span>
+                    </label>
+                    <label>Нет
+                        <input type="radio" value="без покрытия антисептиком" name="antiseptic"
+                            id="antisepticNo" /><span></span>
+                    </label>
+                    <div class="span4"></div>
+                </div>
+                <div>
+                    <h2>Обработка щелей*</h2>
+                    <label>Горячим битумом
+                        <input type="radio" value="горячим битумом" name="gap" id="bitumen" />
+                        <span></span>
+                    </label>
+                    <label>Полиуретановым герметиком
+                        <input type="radio" value="полиуретановым герметиком" name="gap" id="sealant" />
+                        <span></span>
+                    </label>
+                    <label>Не нужно
+                        <input type="radio" value="не нужна" name="gap" id="gapsNo" />
+                        <span></span>
+                    </label>
+                    <div class="span5"></div>
+                </div>
+                <div>
+                    <h2>Окрашивание*</h2>
+                    <label>Да
+                        <input id="coloringYes" type="radio" value="нужно" name="color" />
+                        <span></span>
+                    </label>
+                    <label>Нет
+                        <input id="coloringNo" type="radio" value="не нужно" name="color" />
+                        <span></span>
+                    </label>
+                    <div class="span6"></div>
+                </div>
+                <div>
+                    <h2>Укажите цвет </br><span style="font-size: 15px;">(если нужно окрашивание)</span></h2>
+                    <input id="coloring2" type="text" name="color1" placeholder="Введите цвет" autocomplete="off" />
+                    <div class="span8"></div>
+                </div>
+                <div>
+                    <h2>Нужна ли доставка*</h2>
+                    <label>Да
+                        <input id="deliveryYes" type="radio" value="нужна" name="deliver" />
+                        <span></span>
+                    </label>
+                    <label>Нет
+                        <input id="deliveryNo" type="radio" value="не нужна" name="deliver" />
+                        <span></span>
+                    </label>
+                    <div class="span7"></div>
+                </div>
+                <div>
+                    <h2>Ваш адрес<br /><span style="font-size: 15px;">(если нужна доставка)</span></h2>
+                    <input id="address" type="text" placeholder="Укажите адрес" autocomplete="off" />
+                    <div class="span9"></div>
+                </div>
+                <div>
+                    <h2 class="sum">СУММА: <span class="changing">0</span>р</h2>
+                    <p>Сумма рассчитывается без учета доставки</p>
+                </div>
+                <div><button id="myButton" type="submit">Заказать</button></div>
+            </form>
+
+            <div class="sidebar">
+                <div class="costs">
+                    <h3>Наши цены</h3>
+                    <ul>
+                        <li>Лодка: <span>475р</span></li>
+                        <li>Комплект весел: <span>25р</span></li>
+                        <li>Обработка антисептиком: <span>20р</span></li>
+                        <li>Обработка полиуретановым герметиком: <span>25р</span></li>
+                        <li>Обработка горячим битумом: <span>10р</span></li>
+                        <li>Окрашивание: <span>25р</span></li>
+                        <li>Доставка: <span>0.30р за километр</span></li>
+                    </ul>
+
+                </div>
+
+                <ul class="photos">
+                    <li><a href="big-art1.jpg" class="gallery"><img src="big-art1.jpg" alt="" /></a></li>
+                    <!-- <li><a href="big_10.jpg" class="gallery"><img src="work_10.jpg" alt="" /></a></li> -->
+                    <li><a href="big-art2.jpg" class="gallery"><img src="big-art2.jpg" alt="" /></a></li>
+                    <!-- <li><a href="big_11.jpg" class="gallery"><img src="work_11.jpg"
+                                alt="" /></a>
+                    </li> -->
+                    <li><a href="big-art3.jpg" class="gallery"><img src="big-art3.jpg" alt="" /></a></li>
+                    <!-- <li><a href="big_2.jpg" class="gallery"><img src="work_2.jpg" alt="" /></a>
+                    </li> -->
+                    <li><a href="big-art4.jpg" class="gallery"><img src="big-art4.jpg" alt="" /></a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <h2 class="headlines"><span>О нас</span>
+            <hr class="line2">
+        </h2>
+
+        <div class="columns">
+            <div class="col">
+
+                <h3>Что мы делаем</h3> <br>
+
+                <p>Уже более 10-ти лет мы занимаемся производством лодок. Для их производства используются только
+                    экологически чистые материалы. На протяжении всего времени продано более 300 лодок по всей
+                    Беларуси.
+                    Нам нравится наше дело и мы стараемся его усовершенствовать из года в год. Мы пробуем разные
+                    материалы и любим экспериментировать.
+                </p>
+
+            </div>
+
+            <div class="col">
+
+                <h3>Наша работа</h3><br>
+
+                <p>Мы создаем лодки разного дизайна, размера, цвета. Мы учитываем все Ваши пожелания, адаптируя
+                    лодку под
+                    Ваши запросы. Количество
+                    скамеек можно регулировать. Вы выбираете чем обрабатывать лодку. Вы можете прислать фотографии
+                    того, что
+                    Вы хотите, и мы постараемся воплотить это в жизнь.
+                </p>
+
+            </div>
+
+            <div class="col">
+
+                <h3>О лодках</h3><br>
+
+                <p>Лодка с деревянным корпусом хороша своей натуральностью: в ее изготовлении используются чаще
+                    хвойные породы.
+                    Лодки пропитываются антисептическим составом по желанию заказчика. Размеры: от 3.70м до 4.60м.
+                    Высота борта: 40см.
+                    Швы проконопачиваются промасленной льняной веревкой. Затем по швам заливается горячим битумом.
+                </p>
+
+            </div>
+
+            <div class="col">
+
+                <h3>Контакты</h3><br>
+
+                <ul class="contacts">
+                    <li><span class="telephone"></span><img src="mts.jpg" alt="" /> +375(29)592-13-09</li>
+                    <li><span class="telephone"></span><img src="mts.jpg" alt="" /> +375(29)596-47-38</li>
+                </ul>
+
+            </div>
+
+        </div>
+        <hr>
+        <br><br>
+        <hr>
+    </div>
+    </div>
+
+    <div id="footer">
+
+        <p class="copyright">&copy; 2022 <span>Wooden boat</span>. ИП Мацыль Александр Александрович</a></p>
+
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="order.html">Заказать</a></li>
+            <li><a href="delivery.html">О доставке</a></li>
+            <li><a href="care.html">Уход за лодкой</a></li>
+        </ul>
+
+    </div>
+    </div>
+    <script src="my-script.js"></script>
+</body>
+
+</html>

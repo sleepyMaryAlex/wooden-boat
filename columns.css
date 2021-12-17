@@ -1,0 +1,50 @@
+	.headlines span {
+            color: rgba(255, 255, 255, 0.884);
+            font-size: 35px;
+            font-weight: 800;
+        }
+
+    	.headlines {
+       	    position: relative;
+            overflow: hidden;
+    	}
+
+	.line2 {
+            position: absolute;
+            margin: -20px 0px 0px 130px;
+            width: 88.3%;
+            color: rgba(128, 128, 128, 0.753);
+        }
+
+
+	.columns {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            margin-top: 15px;
+        }
+
+        .col p {
+            color: rgb(158, 159, 160);
+            font-size: 13px;
+            line-height: 20px;
+        }
+
+        .contacts li {
+            list-style-type: none;
+            color: rgba(255, 255, 255, 0.884);
+            padding: 5px;
+        }
+
+        .contacts li img {
+            width: 13px;
+        }
+
+        .col h3 {
+            color: rgba(255, 255, 255, 0.884);
+        }
+
+        .col {
+            width: 23%;
+        }

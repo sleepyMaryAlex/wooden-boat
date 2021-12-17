@@ -1,0 +1,97 @@
+.holder,
+#main,
+#footer {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#header {
+    height: 140px;
+}
+
+#title {
+    width: 200px;
+    font-size: 51px;
+}
+
+ul#siteNav li {
+    text-align: center;
+    margin: 40px 5px 10px 5px;
+    list-style-type: none;
+}
+ul#siteNav li a {
+    font-size: 19px;
+}
+
+.pointer {
+    opacity: 0;
+}
+
+.line,
+.line2 {
+    opacity: 0;
+}
+
+.intro {
+    font-size: 17px;
+    text-align: justify;
+    margin-top: 50px;
+}
+
+.headlines span {
+    font-size: 53px;
+}
+
+.work img {
+    width: 414px;
+}
+
+.work {
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+.columns {
+    flex-wrap: wrap;
+}
+.col {
+    width: 100%;
+}
+
+.col p {
+    font-size: 23px;
+    margin-bottom: 100px;
+    text-align: justify;
+}
+
+.col h3 {
+    font-size: 29px;
+}
+
+.col:first-child {
+    margin-top: 30px;
+}
+
+.copyright {
+    font-size: 26px;
+}
+
+#footer ul li a  {
+    font-size: 27px; 
+}
+
+#footer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#slider img {
+    margin: 30px 0px 50px 0px;
+}
+
+.contacts li img {
+    width: 30px;
+}
+
